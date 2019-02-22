@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "ProjectName.h"
 #include "MQTTMessage.h"
 
 UMQTTMessage::UMQTTMessage() : UObject()

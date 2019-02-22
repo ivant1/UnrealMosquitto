@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "ProjectName.h"
 #include "UnrealMosquitto.h"
 
 #include "RunnableThread.h"
@@ -10,6 +9,9 @@
 #include <queue>
 #include <iostream>
 #include <string>
+
+#include "Runtime/Engine/Classes/GameFramework/Actor.h"
+#include "Runtime/Engine/Public/TimerManager.h"
 
 bool UnrealMosquitto::FRunnableTask::Init() {
 	_continue = true;
@@ -82,7 +84,8 @@ uint32 UnrealMosquitto::FRunnableTask::Run() {
 		}
 
 		// Run the connection loop (receive, connect, etc...)
-		returnCode = connection.loop();
+		// Specify loop timeout here
+		returnCode = connection.loop(10);
 		/*int i = 0;
 		do {
 		returnCode = connection.loop();

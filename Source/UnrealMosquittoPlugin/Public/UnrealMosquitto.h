@@ -11,6 +11,8 @@
 
 #include "MQTTMessage.h"
 
+#include "Runtime/Core/Public/HAL/Runnable.h"
+
 namespace UnrealMosquitto {
 
 	enum class InputEventType {
@@ -151,7 +153,7 @@ namespace UnrealMosquitto {
 #include "UnrealMosquitto.generated.h"
 
 UCLASS(Blueprintable)
-class PROJECTNAME_API AUnrealMosquitto : public AActor
+class AUnrealMosquitto : public AActor
 {
 	GENERATED_BODY()
 	

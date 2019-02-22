@@ -1,0 +1,4 @@
+Intermediate
+/Binaries/Win64/*
+!/Binaries/Win64/mosquitto.dll
+!/Binaries/Win64/mosquittopp.dll

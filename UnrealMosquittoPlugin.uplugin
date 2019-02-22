@@ -1,0 +1,25 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "Unreal Mosquitto Plugin",
+	"Description" : "A MQTT client with blueprint support for Unreal Engine 4, based on Mosquitto. Original repository is https://github.com/SINTEF-9012/UnrealMosquitto",
+	"Category" : "Networking",
+	"CreatedBy" : "Ivan",
+	"CreatedByURL" : "https://github.com/ivant1/UnrealMosquitto",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EnabledByDefault" : false,
+	"CanContainContent" : false,
+	"IsBetaVersion" : false,
+	"Installed" : false,
+	"Modules" :
+	[
+		{
+			"Name" : "UnrealMosquittoPlugin",
+			"Type" : "Developer",
+			"LoadingPhase" : "Default"
+		}
+	]
+}

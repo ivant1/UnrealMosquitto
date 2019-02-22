@@ -20,7 +20,7 @@ struct FUMQTTMessagePayload {
  * 
  */
 UCLASS(Blueprintable)
-class PROJECTNAME_API UMQTTMessage : public UObject
+class UMQTTMessage : public UObject
 {
 	GENERATED_BODY()
 	

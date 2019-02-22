@@ -1,3 +1,8 @@
+# UnrealMosquittoPlugin
+UnrealMosquittoPlugin is forked from https://github.com/SINTEF-9012/UnrealMosquitto and designed as a plugin.
+# Engine Version
+4.21
+
 # UnrealMosquitto
 
 A [MQTT](http://mqtt.org) client with blueprint support for [Unreal Engine 4](http://unrealengine.com), based on [Mosquitto](http://mosquitto.org/).

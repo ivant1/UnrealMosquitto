@@ -1,12 +1,25 @@
 using UnrealBuildTool;
 using System.IO;
 
-public class ProjectName : ModuleRules
+public class UnrealMosquittoPlugin : ModuleRules
 {
-    public ProjectName(ReadOnlyTargetRules Target) : base(Target)
+    public UnrealMosquittoPlugin(ReadOnlyTargetRules Target) : base(Target)
     {
 
         /** existing constructor code */
+
+        PCHUsage = ModuleRules.PCHUsageMode.NoSharedPCHs;
+        PrivatePCHHeaderFile = "UnrealMosquittoPluginPrivatePCH.h";
+
+        PrivateIncludePaths.AddRange(new string[] { "UnrealMosquittoPlugin/Private" });
+        PublicIncludePaths.AddRange(new string[] { "UnrealMosquittoPlugin/Public" });
+        PublicDependencyModuleNames.AddRange(new string[]
+        {
+            "Engine",
+            "Core",
+            "CoreUObject",
+            "BlueprintGraph"
+        });
 
         // /!\ add this to the end /!\
         LoadThirdPartyDLL("mosquitto", Target);

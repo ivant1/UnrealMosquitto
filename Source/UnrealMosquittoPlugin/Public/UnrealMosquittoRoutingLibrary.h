@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class PROJECTNAME_API UUnrealMosquittoRoutingLibrary : public UBlueprintFunctionLibrary
+class UUnrealMosquittoRoutingLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 	
